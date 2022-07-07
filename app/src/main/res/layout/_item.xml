@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTweets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgTweet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Julie wanjiru"
+                app:layout_constraintStart_toEndOf="@+id/imgTweet"
+                app:layout_constraintTop_toTopOf="@+id/imgTweet" />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="28dp"
+                android:text="we move and learn everyday"
+                app:layout_constraintStart_toStartOf="@+id/tvName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgTalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toEndOf="@+id/imgTweet"
+                app:layout_constraintTop_toBottomOf="@+id/tvText"
+                app:srcCompat="@drawable/ic_baseline_assistant_24" />
+
+            <TextView
+                android:id="@+id/tvTalks"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="16dp"
+                android:text="10k"
+                app:layout_constraintStart_toStartOf="@+id/imgTalk"
+                app:layout_constraintTop_toTopOf="@+id/imgTalk" />
+
+            <ImageView
+                android:id="@+id/imgCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintStart_toEndOf="@+id/imgTweet"
+                app:layout_constraintTop_toTopOf="@+id/tvText"
+                app:srcCompat="@drawable/ic_baseline_crop_rotate_24" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/imgTweet"
+                app:layout_constraintTop_toBottomOf="@+id/tvText" />
+
+            <TextView
+                android:id="@+id/tVRotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="44dp"
+                android:text="30K"
+                app:layout_constraintStart_toEndOf="@+id/imgCrop"
+                app:layout_constraintTop_toBottomOf="@+id/tvText" />
+
+            <ImageView
+                android:id="@+id/imgLove"
+                android:layout_width="30dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="296dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toStartOf="@+id/imgTweet"
+                app:layout_constraintTop_toBottomOf="@+id/tvText"
+                app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+            <TextView
+                android:id="@+id/tvFavourites"
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="92dp"
+                android:text="60k"
+                app:layout_constraintStart_toEndOf="@+id/imgLove"
+                app:layout_constraintTop_toTopOf="@+id/imgTweet" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
